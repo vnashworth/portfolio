@@ -1,22 +1,396 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title %></title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <div class="container">
-        <div class="row">
-            <div class="col text-center">
-                <h1 class="name"><%= title %></h1>
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Victoria Ashworth | Full Stack Web Designer & Developer for Hire in Carlsbad, CA or Remote</title>
+        <meta name="description" content="Victoria Ashworth is a freshly graduated full stack web developer and designer searching for work in Carlsbad, CA or remote.">
+        <meta property="og:locale" content="en_US">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Victoria Ashworth | Web Designer & Developer for Hire in Carlsbad, CA or Remote">
+        <meta property="og:url" content="https://www.victoriaash.com">
+        <meta property="og:image" content="/images/logogold.png">
+        <meta property="og:description" content="Victoria Ashworth is a freshly graduated full stack web developer and designer searching for work in Carlsbad, CA or remote.">
+        <meta property="og:site_name" content="Victoria Nishimoto Ashworth">
+        <meta name="keywords" content="Full Stack, Web, Developer, Designer, Graduated, For hire, Carlsbad, CA, Remote">
+
+        <link rel="canonical" href="https://www.victoriaash.com">
+        <link rel="icon" href="/images/logogold.png">
+        <script type='application/ld+json'>
+        {
+          "@context": "http://www.schema.org",
+          "@type": "person",
+          "name": "Victoria Nishimoto Ashworth",
+          "jobTitle": "Full Stack Developer",
+          "url": "victoriaash.com",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Carlsbad",
+            "addressRegion": "CA",
+            "postalCode": "92008",
+            "addressCountry": "United States"
+          },
+          "email": "mail@victoriaash.com"
+        }
+        </script>
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Asap:400,700|Lato&display=swap" rel="stylesheet">
+        <link rel='stylesheet' href='/stylesheets/style.css' />
+    </head>
+
+    <body>
+        <canvas id="canvas">
+            <img id="canvas-backup" class="img-fluid" src="/images/canvas-backup.jpg">
+        </canvas>
+        <section id="intro" class="h-110">
+            <div class="container-fluid h-110">
+                <div class="row align-items-center h-110">
+                    <div class="col text-center">
+                        <h1 class="name">
+                            <%= title %>
+                        </h1>
+                        <p>Full Stack Developer</p>
+                        <div class="row mb-3 justify-content-center">
+                            <div class="col-auto">
+                                <a href="#about">About</a>
+                            </div>
+                            <div class="col-auto">
+                                <a href="#experience">Experience</a>
+                            </div>
+                            <div class="col-auto">
+                                <a href="#projects">Projects</a>
+                            </div>
+                            <div class="col-auto">
+                                <a href="#skills">Skills</a>
+                            </div>
+                            <div class="col-auto">
+                                <a href="#contact">Contact</a>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-auto">
+                                <a href="https://github.com/vnashworth" target="_blank"><i class="fab fa-github-square fa-2x"></i></a>
+                            </div>
+                            <div class="col-auto">
+                                <a href="https://www.linkedin.com/in/victoriaashworth/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+                            </div>
+                            <div class="col-auto">
+                                <a href="https://www.facebook.com/vnashworth" target="_blank"><i class="fab fa-facebook-square fa-2x"></i></a>
+                            </div>
+                            <div class="col-auto">
+                                <a href="https://twitter.com/vnashworth" target="_blank"><i class="fab fa-twitter-square fa-2x"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
+        </section>
+        <section id="about">
+            <div class="container container-card">
+                <div class="row">
+                    <div class="col-12 col-sm-8">
+                        <h2 class="py-3 section-title"><span>About Me</span></h2>
+                        <p>There's nothing more fulfilling than doing things I'm passionate about. Whether that's reading a good book, binge-watching my favorite shows, coding a project all night, spending time with family and friends, or learning something new, it's never a waste of time.</p>
+                        <p>For many years, my number one passion and goal was my education. Having just received my <a href="https://marriottschool.byu.edu/infosys/mism/what-will-i-study/program-overview/" target="_blank">Masters in Information Systems Management from Brigham Young University</a> in April 2019, I'm excited to explore what's next for me: Carlsbad, California!!</p>
+                        <p>Being a west coast girl most of my life, I'm thrilled to return and am ready to find a job that can become my new passion.</p>
+                        <!-- TODO: add download resume -->
+                    </div>
+                    <div class="col-12 col-sm-4">
+                        <img class="img-fluid" src="/images/butterflies-rising.jpg" alt="Why else are we here if not to have unreasonable passion for things?">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="experience">
+            <div class="container">
+                <h2 class="py-3 section-title"><span>Experience</span></h2>
+                <div class="row">
+                    <div class="col-12 col-md-5 col-lg-4">
+                        <ul class="timeline nav" role="tablist">
+                            <li>
+                                <a class="active" data-toggle="tab" role="tab" href="#job1">
+                                    <b>Freelancer</b>
+                                    <br>
+                                    Jun 2017 - Present
+                                </a>
+                            </li>
+                            <li>
+                                <a data-toggle="tab" role="tab" href="#job2">
+                                    <b>Advanced Web Developer</b>
+                                    <br>
+                                    Brigham Young University
+                                    <br>
+                                    Feb 2018 - Apr 2019
+                                </a>
+                            </li>
+                            <li>
+                                <a data-toggle="tab" role="tab" href="#job3">
+                                    <b>Business Technology Intern</b>
+                                    <br>
+                                    Discover Financial Services
+                                    <br>
+                                    May 2016 - Aug 2016
+                                </a>
+                            </li>
+                            <li>
+                                <a data-toggle="tab" role="tab" href="#job4">
+                                    <b>Teaching Assistant</b>
+                                    <br>
+                                    Brigham Young University
+                                    <br>
+                                    Jan 2016 - Apr 2016
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-7 col-lg-8">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="job-description active" id="job1">
+                                    <h4>Freelancer</h4>
+                                    <div class="row mb-2">
+                                        <div class="col-2">
+                                            <img class="img-fluid" src="/images/vash.png" alt="Victoria Ashworth logo">
+                                        </div>
+                                        <div class="col-10">
+                                            <p class="text-muted mb-0">Jun 2017 - Present</p>
+                                        </div>
+                                    </div>
+                                    <ul>
+                                        <li>Collaborate with clients to design a website for their business needs</li>
+                                        <li>Prototype website design for client approval</li>
+                                        <li>Develop and deploy custom website within a scheduled timeline</li>
+                                    </ul>
+                                </div>
+                                <div class="job-description" id="job2">
+                                    <h4>Advanced Web Developer</h4>
+                                    <div class="row mb-2">
+                                        <div class="col-2">
+                                            <img class="img-fluid" src="/images/byu_medallion.svg" alt="Graduated and worked at BYU">
+                                        </div>
+                                        <div class="col-10">
+                                            <p class="mb-0">Brigham Young University</p>
+                                            <p class="text-muted mb-0">
+                                                Feb 2018 - Apr 2019
+                                                <br>
+                                                Provo, UT
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <ul>
+                                        <li>Managed and participated in design and development of custom advisement system using Drupal CMS</li>
+                                        <li>Developed multiple custom modules and themes for various Drupal projects</li>
+                                        <li>Trained new employees on principles of views, content types, taxonomy, twig templates, etc.</li>
+                                    </ul>
+                                </div>
+                                <div class="job-description" id="job3">
+                                    <h4>Business Technology Intern</h4>
+                                    <div class="row mb-2">
+                                        <div class="col-2">
+                                            <img class="img-fluid" src="/images/discover.jpg" alt="Internship at Discover Financial Services">
+                                        </div>
+                                        <div class="col-10">
+                                            <p class="mb-0">Discover Financial Services</p>
+                                            <p class="text-muted mb-0">
+                                                May 2016 - Aug 2016
+                                                <br>
+                                                Lake Park, UT
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <ul>
+                                        <li>Received overall rating of "Outstanding" (highest rating) on Final Intern Evaluation, becoming the first to receive this rating for interns in the Lake Park office</li>
+                                        <li>Learned new programming tools (Spring Tool Suite, Gradle, Jenkins, Pivotal Cloud Foundry) and developed process documentation of complete systems development life cycle using these tools</li>
+                                        <li>Created prototype application using new tools and presented to VP</li>
+                                    </ul>
+                                </div>
+                                <div class="job-description" id="job4">
+                                    <h4>Teaching Assistant</h4>
+                                    <div class="row mb-2">
+                                        <div class="col-2">
+                                            <img class="img-fluid" src="/images/byu_medallion.svg" alt="Graduated and worked at BYU">
+                                        </div>
+                                        <div class="col-10">
+                                            <p class="mb-0">Brigham Young University</p>
+                                            <p class="text-muted mb-0">
+                                                Jan 2016 - Apr 2016
+                                                <br>
+                                                Provo, UT
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <ul>
+                                        <li>Attended and helped teach "Introduction to Java" class</li>
+                                        <li>Held weekly help sessions, teaching students one-on-one or as a group</li>
+                                        <li>Privately tutored students from sports team</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="projects">
+            <div id="assymetical"></div>
+            <div class="container">
+                <h2 class="py-3 section-title"><span>Projects</span></h2>
+                <div class="row">
+                    <div class="col-12 col-sm-6">
+                        <div class="card mb-3">
+                            <a href="https://www.feetnw.com/" target="_blank">
+                                <img src="/images/nwfas.png" class="card-img" alt="Custom web design and development by Victoria Ashworth for small business">
+                            </a>
+                            <div class="card-body">
+                                <a href="https://www.feetnw.com/" target="_blank">
+                                    <h5 class="card-title">Northwest Foot and Ankle Specialists</h5>
+                                </a>
+                                <p class="card-text">I taught myself PHP by building this website. I also used this project to learn about SEO, schema, image optimization, Google Analytics, Google Maps API, etc.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6">
+                        <div class="card mb-3">
+                            <a href="https://is415-project.herokuapp.com/" target="_blank">
+                                <img src="/images/lol-recommender.png" class="card-img" alt="Custom web design and development by Victoria Ashworth">
+                            </a>
 
+                            <div class="card-body">
+                                <a href="https://is415-project.herokuapp.com/" target="_blank">
+                                    <h5 class="card-title">League of Legends Recommender</h5>
+                                </a>
+                                <p class="card-text">I built this project for my Data & Machine Learning class. We learned to use Microsoft Azure Machine Learning Studio and Tableau in the class and built a predictive web service using them.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="skills">
+            <div class="container">
+                <h2 class="py-3 section-title"><span>Skills</span></h2>
+                <div class="row">
+                    <div class="col">
+                        <ul>
+                            <li>HTML 5</li>
+                            <li>CSS 3</li>
+                            <li>Bootstrap 3 & 4</li>
+                            <li>JavaScript (ES6)</li>
+                            <li>JQuery</li>
+                            <li>Local SEO</li>
+                            <li>Schema</li>
+                            <hr>
+                            <li>Django Mako Plus</li>
+                            <li>Spring / SpringBoot</li>
+                            <li>ASP.NET MVC5</li>
+                            <li>Node.js & Express.js</li>
+                            <li>Drupal</li>
+                            <li>Wordpress</li>
+                            <hr>
+                            <li>iOS Auto Layout</li>
+                            <li>UIKit</li>
+                            <li>ARKit</li>
+                            <li>SceneKit</li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <ul>
+                            <li>Python</li>
+                            <li>PHP</li>
+                            <li>Swift</li>
+                            <li>Java/C#</li>
+                            <li>VBA</li>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+                            <hr>
+                            <li>MySQL</li>
+                            <li>PostgreSQL</li>
+                            <li>Oracle SQL</li>
+                            <li>Firebase</li>
+                            <hr>
+                            <li>Heroku</li>
+                            <li>
+                                AWS (S3, CloudFront, Elastic Beanstalk, RDS, etc)
+                            </li>
+                            <li>Azure</li>
+                            <li>Pivotal Cloud Foundry</li>
+                            <hr>
+                            <li>Maven</li>
+                            <li>Gradle</li>
+                            <li>Jenkins</li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <ul>
+                            <li>Tableau</li>
+                            <li>Azure Machine Learning Studio</li>
+                            <li>JMP</li>
+                            <li>Google Analytics</li>
+                            <hr>
+                            <li>Adobe Creative Suite</li>
+                            <li>Lucid Charts</li>
+                            <li>XMind</li>
+                            <li>Microsoft Office Suite</li>
+                            <hr>
+                            <li>Git/GitHub</li>
+                            <li>Powershell</li>
+                            <li>Linux</li>
+                            <hr>
+                            <li>MacOS</li>
+                            <li>Linux (Kubuntu)</li>
+                            <li>Windows</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section id="contact" class="pt-4 pb-4">
+            <div class="container container-card pb-4">
+                <h2 class="py-3 section-title"><span>Contact Me</span></h2>
+                <div class="row">
+                    <div class="col">
+                        <p>Send me an email at <a href = "mailto: mail@victoriaash.com">mail@victoriaash.com</a> or leave a message below!</p>
+                        <form method="POST" action="/send_email">
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="name">Name</label>
+                                    <input type="text" class="form-control" name="name">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="email">Email</label>
+                                    <input type="email" class="form-control" name="email">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" class="form-control" name="subject">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea class="form-control" name="message" rows="3"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Send</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="/javascripts/main.js"></script>
+        <script src="/javascripts/stars.js"></script>
+        <script>
+        // TODO: change to modal or alert
+        <% if (message) { %>
+            alert("<%= message %>");
+        <% } %>
+
+        </script>
+
+    </body>
+
 </html>

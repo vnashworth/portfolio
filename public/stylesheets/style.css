@@ -1,0 +1,245 @@
+/********** Global **********/
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Asap', sans-serif;
+    display: inline-block;
+}
+
+a {
+    color: #96B9D9;
+}
+
+a:hover {
+    color: #E6CABF;
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+section {
+    margin-top: 1vh;
+    padding-bottom: 1vh;
+}
+
+.h-110 {
+    height: 110vh;
+}
+
+.section-title {
+    position: relative;
+}
+
+.section-title span {
+    position: absolute;
+    width: 100%;
+    background-image: url("/images/texture-black.jpg");
+    background-position: center;
+    background-size: cover;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.container-card {
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.section-title:after {
+    text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);
+    color: transparent;
+}
+
+/********** Intro Section **********/
+#intro {
+    color: #C3D0E4;
+}
+
+.name {
+    display:inline-block;
+    text-transform: uppercase;
+    letter-spacing: .5vw;
+    font-weight: bold;
+    font-family: 'Asap', sans-serif;
+    color: #C3D0E4;
+    background-image: url("/images/texture-white.jpg");
+    background-position: center;
+    background-size: cover;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+#intro a {
+    color: #C3D0E4;
+    text-transform: uppercase;
+}
+
+#intro a:hover {
+    color: #E6CABF;
+}
+
+#canvas {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 110vh;
+
+    background: #000428;
+    background: -webkit-linear-gradient(#00111e 30%, #033d5e);
+    background: -moz-linear-gradient(#00111e 30%, #033d5e);
+    background: -o-linear-gradient(#00111e 30%, #033d5e);
+    background: linear-gradient(#00111e 30%, #033d5e);
+    /* background: linear-gradient(#021226 33%, #0D2340 66%, #183459); */
+
+
+/* background: -webkit-linear-gradient(to top, #004e92, #000428);
+background: linear-gradient(to top, #004e92, #000428); */
+
+}
+
+#canvas-backup {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 110vh;
+}
+
+
+/********** About Section **********/
+#about {
+    position: relative;
+    top: -10vh;
+    margin-bottom: -10vh;
+}
+
+#about .section-title:after {
+    content: "About Me";
+}
+
+#about img {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+/********** Experience Section **********/
+#experience {
+    position: relative;
+}
+
+#experience .section-title:after {
+    content: "Experience";
+}
+
+ul.timeline {
+    list-style-type: none;
+    position: relative;
+    padding-left: 40px;
+}
+
+ul.timeline:before {
+    content: '';
+    background: #d4d9df;
+    display: inline-block;
+    position: absolute;
+    left: 29px;
+    width: 2px;
+    height: 100%;
+    z-index: 400;
+}
+
+ul.timeline > li {
+    margin: 5px 0;
+    padding-left: 20px;
+}
+
+ul.timeline > li > a:before {
+    content: '';
+    background: white;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid #f1bbb9;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    z-index: 400;
+}
+
+ul.timeline > li > a.active:before {
+    background: #f1bbb9;
+}
+
+ul.timeline > li > a.active {
+    color: #f1bbb9;
+}
+
+.job-description {
+    display: none;
+}
+
+.job-description.active {
+    display: block;
+}
+
+.job-description ul li::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f105";
+    margin-left: -20px;
+    margin-right: 12px;
+}
+
+/********** Projects Section **********/
+#projects {
+    position: relative;
+}
+
+#projects .section-title:after {
+    content: "Projects";
+}
+
+#assymetical {
+    position:absolute;
+    width: 100%;
+    height: 200px;
+    top: 25vh;
+    background-image: url("/images/projects-background.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    transform-origin: top left;
+    transform: skewY(-3deg);
+    z-index: -2;
+}
+
+/********** Skills Section **********/
+#skills .section-title:after {
+    content: "Skills";
+}
+
+#skills ul li::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f105";
+    margin-left: -20px;
+    margin-right: 12px;
+}
+
+/********** Contact Section **********/
+#contact .section-title:after {
+    content: "Contact Me";
+}
+
+#contact {
+    background-image: url("/images/contact-background.jpg");
+    background-size: cover;
+    background-position: top;
+}
