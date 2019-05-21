@@ -26,11 +26,14 @@ ul {
 }
 
 section {
+    margin-top: 10px;
+    padding-bottom: 10px;
     margin-top: 1vh;
     padding-bottom: 1vh;
 }
 
 .h-110 {
+    height: 110%;
     height: 110vh;
 }
 
@@ -41,11 +44,21 @@ section {
 .section-title span {
     position: absolute;
     width: 100%;
-    background-image: url("/images/texture-black.jpg");
+    background-image: url("/images/texture-black-min.webp");
     background-position: center;
     background-size: cover;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
+}
+
+.no-webp .section-title span {
+    background-image: url("/images/texture-black-min.jpg");
+}
+
+.no-backgroundcliptext .section-title span {
+    color: #000;
+    background: none;
+    -webkit-text-fill-color: #000;
 }
 
 .container-card {
@@ -66,15 +79,26 @@ section {
 .name {
     display:inline-block;
     text-transform: uppercase;
+    letter-spacing: 5px;
     letter-spacing: .5vw;
     font-weight: bold;
     font-family: 'Asap', sans-serif;
     color: #C3D0E4;
-    background-image: url("/images/texture-white.jpg");
+    background-image: url("/images/texture-white-min.webp");
     background-position: center;
     background-size: cover;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
+}
+
+.no-webp .name {
+    background-image: url("/images/texture-white-min.jpg");
+}
+
+.no-backgroundcliptext .name {
+    color: #fff;
+    background: none;
+    -webkit-text-fill-color: #fff;
 }
 
 #intro a {
@@ -90,6 +114,7 @@ section {
     position: absolute;
     top: 0;
     width: 100%;
+    height: 110%;
     height: 110vh;
 
     background: #000428;
@@ -97,18 +122,13 @@ section {
     background: -moz-linear-gradient(#00111e 30%, #033d5e);
     background: -o-linear-gradient(#00111e 30%, #033d5e);
     background: linear-gradient(#00111e 30%, #033d5e);
-    /* background: linear-gradient(#021226 33%, #0D2340 66%, #183459); */
-
-
-/* background: -webkit-linear-gradient(to top, #004e92, #000428);
-background: linear-gradient(to top, #004e92, #000428); */
-
 }
 
 #canvas-backup {
     position: absolute;
     top: 0;
     width: 100%;
+    height: 110%;
     height: 110vh;
 }
 
@@ -116,7 +136,9 @@ background: linear-gradient(to top, #004e92, #000428); */
 /********** About Section **********/
 #about {
     position: relative;
+    top: -65px;
     top: -10vh;
+    margin-bottom: -65px;
     margin-bottom: -10vh;
 }
 
@@ -139,6 +161,7 @@ background: linear-gradient(to top, #004e92, #000428); */
 }
 
 ul.timeline {
+    flex-direction: column;
     list-style-type: none;
     position: relative;
     padding-left: 40px;
@@ -210,8 +233,9 @@ ul.timeline > li > a.active {
     position:absolute;
     width: 100%;
     height: 200px;
+    top: 165px;
     top: 25vh;
-    background-image: url("/images/projects-background.jpg");
+    background-image: url("/images/projects-background-min.jpg");
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -239,7 +263,7 @@ ul.timeline > li > a.active {
 }
 
 #contact {
-    background-image: url("/images/contact-background.jpg");
+    background-image: url("/images/contact-background-min.jpg");
     background-size: cover;
     background-position: top;
 }

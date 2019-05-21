@@ -6,14 +6,9 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
-const expressSitemapXml = require('express-sitemap-xml')
+var sitemapRouter = require('./routes/sitemap');
+
 var app = express();
-
-app.use(expressSitemapXml(getUrls, 'https://victoriaash.com'))
-
-async function getUrls () {
-  return await getUrlsFromDatabase()
-}
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -26,6 +21,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
+app.use('/', sitemapRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
