@@ -98,7 +98,7 @@
                         <p>There's nothing more fulfilling than doing things I'm passionate about. Whether that's reading a good book, binge-watching my favorite shows, coding a project all night, spending time with family and friends, or learning something new, it's never a waste of time.</p>
                         <p>For many years, my number one passion and goal was my education. Having just received my <a href="https://marriottschool.byu.edu/infosys/mism/what-will-i-study/program-overview/" target="_blank">Masters in Information Systems Management from Brigham Young University</a> in April 2019, I'm excited to explore what's next for me: Carlsbad, California!!</p>
                         <p>Being a west coast girl most of my life, I'm thrilled to return and am ready to find a job that can become my new passion.</p>
-                        <!-- TODO: add download resume -->
+                        <a href="/pdf/RESUME.pdf" class="btn btn-custom" target="_blank">Download Resume</a>
                     </div>
                     <div class="col-12 col-sm-4">
                         <picture>
@@ -156,7 +156,7 @@
                         <div class="card">
                             <div class="card-body">
                                 <div class="job-description active" id="job1">
-                                    <h4>Freelancer</h4>
+                                    <h4>Full Stack Developer & Designer</h4>
                                     <div class="row mb-2">
                                         <div class="col-2">
                                             <picture>
@@ -166,7 +166,12 @@
                                             </picture>
                                         </div>
                                         <div class="col-10">
-                                            <p class="text-muted mb-0">Jun 2017 - Present</p>
+                                            <p class="mb-0">Freelancer</p>
+                                            <p class="text-muted mb-0">
+                                                Jun 2017 - Present
+                                                <br>
+                                                Remote
+                                            </p>
                                         </div>
                                     </div>
                                     <ul>
@@ -410,21 +415,32 @@
             </div>
         </section>
 
+        <div class="modal fade" id="emailModal" tabindex="-1" role="dialog" aria-labelledby="emailModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <p class="mb-0">Email Confirmation</p>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body"></div>
+                </div>
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="/javascripts/modernizr-custom.js"></script>
         <script src="/javascripts/main.js"></script>
         <script src="/javascripts/stars.js"></script>
         <script>
-        // TODO: change to modal or alert
-        <% if (message) { %>
-            alert("<%= message %>");
-        <% } %>
+            <% if (message) { %>
+                $('#emailModal .modal-body').text("<%= message %>");
 
+                $('#emailModal').modal('show');
+            <% } %>
         </script>
-
     </body>
-
 </html>

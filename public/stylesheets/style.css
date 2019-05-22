@@ -17,8 +17,16 @@ a {
 }
 
 a:hover {
-    color: #E6CABF;
+    color: #f1bbb9;
     text-decoration: none;
+}
+
+.btn-custom {
+    background-color: #f1bbb9;
+}
+
+.btn-custom:hover {
+    background-color: #96B9D9;
 }
 
 ul {

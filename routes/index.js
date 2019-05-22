@@ -37,6 +37,7 @@ router.post('/send_email', (req, res) => {
   });
 
   sg.API(request, function(error, response) {
+    console.log(response.body);
     if (response.statusCode == 202) {
         email_response = "Your email has been sent successfully.";
     } else {
